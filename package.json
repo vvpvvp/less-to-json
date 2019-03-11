@@ -1,0 +1,29 @@
+{
+  "name": "less-to-json",
+  "version": "1.0.0",
+  "description": "less file convert to json",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vvpvvp/less-to-json.git"
+  },
+  "keywords": [
+    "less",
+    "json",
+    "convert"
+  ],
+  "author": "vvpvvp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vvpvvp/less-to-json/issues"
+  },
+  "homepage": "https://github.com/vvpvvp/less-to-json#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "less": "^3.9.0",
+    "path": "^0.12.7"
+  }
+}
