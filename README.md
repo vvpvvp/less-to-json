@@ -12,7 +12,7 @@ $ npm install less-to-json
 ## Use
 
 ``` shell
-$ lesstojson test.less
+$ lessto --json test.less test.json
 
-$ lesstojs test.less
+$ lessto --js test.less test.js
 ```

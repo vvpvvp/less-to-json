@@ -6,6 +6,9 @@
   "scripts": {
     "test": "node test/test"
   },
+  "bin": {
+    "lessto": "bin/lessto.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vvpvvp/less-to-json.git"
@@ -22,8 +25,10 @@
   },
   "homepage": "https://github.com/vvpvvp/less-to-json#readme",
   "dependencies": {
+    "commander": "^2.19.0",
     "fs": "0.0.1-security",
     "less": "^3.9.0",
+    "log4js": "^4.0.2",
     "path": "^0.12.7"
   }
 }
