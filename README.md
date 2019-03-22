@@ -16,3 +16,12 @@ $ lessto --json test.less test.json
 
 $ lessto --js test.less test.js
 ```
+
+``` javascript
+const lessToJson = require('less-to-json');
+
+lessToJson('css/var.less', (result) => {
+  
+})
+```
+
