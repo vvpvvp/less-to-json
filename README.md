@@ -20,8 +20,6 @@ $ lessto --js test.less test.js
 ``` javascript
 const lessToJson = require('less-to-json');
 
-lessToJson('css/var.less', (result) => {
-  
-})
+let result = lessToJson('css/var.less')
 ```
 

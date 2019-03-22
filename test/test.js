@@ -1,7 +1,6 @@
 const path = require("path");
-const Convert = require('../index');
+const Convert = require('../src/index');
 // console.log(path.resolve(__dirname, '../index'))
 
-Convert(path.resolve(__dirname, './test.less'), (resp)=>{
-  console.log(resp)
-})
+let result = Convert(path.resolve(__dirname, './test.less'))
+console.log(result)

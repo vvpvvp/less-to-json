@@ -34,15 +34,14 @@ if (isJs || isJson) {
 
   logger.info("start convert")
 
-  convert(sourcePath, result => {
-    var resulttxt = (isJs ? 'module.exports = ' : '') + JSON.stringify(result, null, '\t');
+  let result = convert(sourcePath)
+  var resulttxt = (isJs ? 'module.exports = ' : '') + JSON.stringify(result, null, '\t');
 
-    fs.writeFile(fileName, resulttxt, function(err, fd) {
-      logger.info(`convert to ${fileName}`)
-      if (err) {
-        return logger.error(err)
-      }
-      logger.info("convert success!")
-    })
+  fs.writeFile(fileName, resulttxt, function(err, fd) {
+    logger.info(`convert to ${fileName}`)
+    if (err) {
+      return logger.error(err)
+    }
+    logger.info("convert success!")
   })
 }
